@@ -7,16 +7,15 @@ Nepal Medical Council is a Python library for dealing with Doctor's registered i
 Nepal Medical Council
 
 ```python
-from nepali_company_registrar import NepalCompanyRegistrar
+from nepal_medical_council import NepalMedicalCouncil
 
-nepali_company_registrar = NepalCompanyRegistrar(company_name_input='AGRICULTURAL DEVELOPMENT BANK') # for company input
+nepal_medical_council = NepalMedicalCouncil(name='amar gurung') # for doctor input
 
-nepali_company_registrar.is_valid()   # returns "True" if it is registered company name
-                                      # returns "False" if it is not registered in company registrar
+nepal_medical_council.is_valid()   # returns "True" if it is registered doctor
+                                      # returns "False" if it is not registered in nepal medical council
 
-nepali_company_registrar.get_company_detail()      # returns company detail eg. {'name': 'AGRICULTURAL DEVELOPMENT BANK', 'name_in_nepali': 'कृषि विकास बैंक', 'registration_number': '928', 'registration_date': '2062-3-30', 'company_type': 'Public', 'share_holder': None, 'address': 'का.म.न.पा.-११,काठमाण्डौ,बाग्मती'}
+nepal_medical_council.get_doctor_detail()      # returns doctor detail eg. {'full_name': 'Dr. Niraj Regmi', 'nmc_number': '5480', 'address': 'Ratopul, Gaushala , Kathmandu', 'gender': 'Male', 'degree': 'MBBS'}
 
-nepali_company_registrar.list_similar_companies()    # returns list of similar companies registered in company registrar
 ```
 
 

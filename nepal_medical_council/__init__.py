@@ -1,0 +1,1 @@
+from nepal_medical_council.nepal_medical_council import NepalMedicalCouncil
